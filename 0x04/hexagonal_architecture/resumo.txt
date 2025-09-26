@@ -1,0 +1,16 @@
+A Arquitetura Hexagonal divide as classes do projeto em dois gurpos: domínio e infraestrutura.
+É uma ideia proposta por Alistair Cockburn.
+Vantagens:
+- isolamento entre as camadas de negócio e infraestrutura;
+- facilidade nos testes;
+- independência de tecnologias;
+Os recursos usados são o domínio, adaptadores e portas.
+Principais diferenças entre :
+- Clean Architecture é baseada em camadas concêntricas e Arquitetura Hexagonal possui portas e adaptadores;
+- Arquitetura Hexagonal os adaptadores dependem do núcleo, Clean Architecture tem as dependências que sempre apontam para o núcleo (regra de dependência);
+A Arquitetura Hexagonal não deve ser usada em todos os tipos de projeto, o ideal é usar para microsserviços, que normalmente são independentes.
+Já para projetos menores não é recomendado, pois tem um adicional de complexidade.
+Alguns itens a observar antes d eimplementar a Arquitetura Hexagonal:
+- complexidade dos domínios;
+- necessidade de múltiplas interfaces;
+- testabilidade;
